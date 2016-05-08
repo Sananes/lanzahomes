@@ -16,11 +16,12 @@ assets:
   cachebust: soft
 
 # Site settings
-title: LanzaHomes
-description: Conflux puts all your customer feedback into one place
+title: LanzaHomes | Villa in Lanzarote
+description: Villa Maxim, located on the stunning island of Lanzarote.
+keywords: villa rental, lanzarote rental, holiday rental lanzarote, villa rental lanzarote, rental villas, lanzarote holiday villa
 
 # Name of project on Github
-baseurl: ''
+baseurl: 'http://lanzahomes.com/2016/'
 
 # Build settings
 markdown: kramdown

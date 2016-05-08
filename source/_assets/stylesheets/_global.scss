@@ -1,6 +1,5 @@
 body {
   background-color: #fff;
-
 }
 
 
@@ -20,6 +19,9 @@ body {
     background-size:100%;
     margin:0;
     margin-top:-10px;
+
+    a { display:block; }
+
   }
   .menu {
     @include display(flex);
@@ -27,10 +29,12 @@ body {
     height:100%;
     margin-left:30px;
 
+
     li {
       height:100%;
       text-transform:uppercase;
       letter-spacing:1px;
+      font-family: $secondary-font-family;
       font-size: 13px;
 
       a {
@@ -67,6 +71,7 @@ body {
 
 
 .features {
+  display:none;
   padding:50px;
   ul {
     @include display(flex);
@@ -80,11 +85,16 @@ body {
 }
 
 .masonry {
+  margin-bottom:-100px;
+  margin-top:-100px;
   .container {
-    margin-bottom:50px;
+
   }
   .localarea {
     background:url(image_path('lagomar.jpg')) no-repeat;
+    @include hidpi {
+      background-image: url(image_path('lagomar@2x.jpg'));
+    }
     background-size:cover;
     @include display(flex);
     @include justify-content(center);
@@ -138,6 +148,10 @@ body {
       @include align-items(flex-end);
       padding: 10px !important;
       height:318px;
+
+      @include hidpi {
+        background-image: url(image_path('arrival@2x.jpg'));
+      }
       h2 {
         padding:5px;
         background: $blue;
@@ -189,11 +203,15 @@ body {
   background: url(image_path('hero.jpg'));
   background-size:cover;
 
+  @include hidpi {
+    background: url(image_path('hero@2x.jpg'));
+  }
+
 }
 
 .bottom-cta {
   background: $blue;
-  padding:100px;
+  padding:200px 0 100px 0;
   text-align:center;
   .container {
     @include display(flex);
