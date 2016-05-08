@@ -1,4 +1,4 @@
 _site
 build
 node_modules
-source/.asset-cache
+source/.asset-cache/
