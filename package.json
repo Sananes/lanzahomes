@@ -1,0 +1,16 @@
+{
+  "name": "Conflux",
+  "version": "1.0.0",
+  "description": "Conflux",
+  "author": "Aaron Sananes",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "lodash": "^4.6.1",
+    "gulp": "^3.8.8",
+    "gulp-sass": "^2.1.0",
+    "gulp-autoprefixer": "1.0.0"
+  }
+}

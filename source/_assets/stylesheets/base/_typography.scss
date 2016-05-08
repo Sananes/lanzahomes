@@ -1,0 +1,92 @@
+body {
+  @include font-feature-settings("kern", "liga", "pnum");
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight:500;
+  line-height: $base-line-height;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+  color: $dark-blue;
+}
+h1,h2 {
+  font-weight:400;
+  @include media($mobile) {
+    font-size: 30px;
+  }
+}
+h1 {
+    font-size: 44px;
+    @include media($mobile) {
+      font-size: 30px;
+    }
+}
+h2 {
+  font-size: 38px;
+
+  @include media($mobile) {
+    font-size: 30px;
+  }
+}
+h3,
+h4,
+h5,
+h6 {
+  font-weight:500;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+  font-size:18px;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+blockquote {
+  font-family: $heading-font-family;
+  font-size: 24px;
+}
+.large-title {
+  font-size: 88px;
+}
+.title-bold {
+  font-weight:500;
+}

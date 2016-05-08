@@ -1,0 +1,26 @@
+gems:
+  - bourbon
+  - neat
+  - octopress-autoprefixer
+
+# Structure configuration
+source: source
+destination: build
+
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+  cachebust: soft
+
+# Site settings
+title: LanzaHomes
+description: Conflux puts all your customer feedback into one place
+
+# Name of project on Github
+baseurl: ''
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,23 @@
+---
+# Layouts must stay in HTML
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Customer insights make the difference between an average product and one people will love. Tap into them with Conflux." />
+    <meta name="keywords" content="customer feedback, product management, feedback management, customer insight, customer reviews, reviews, review software" />
+    <meta name="author" content="meta-tags generator">
+    <meta name="robots" content="index, follow" />
+    <title>Feedback under your control with Conflux</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{% asset_path application.css %}">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/e9181efa4b/LanzaHomes/style.css">
+  </head>
+  <body>
+    {{ content }}
+    <script type="text/javascript" src="{% asset_path application.js %}"></script>
+  </body>
+</html>

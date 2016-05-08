@@ -1,0 +1,113 @@
+
+@font-face {
+	font-family: 'Whitney';
+	src: url(font_path('Whitney-Light.eot'));
+	src: url(font_path('Whitney-Light.eot?#iefix')) format('embedded-opentype'),
+		url(font_path('Whitney-Light.woff')) format('woff'),
+		url(font_path('Whitney-Light.ttf')) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Whitney';
+	src: url(font_path('Whitney-LightItalic.eot'));
+	src: url(font_path('Whitney-LightItalic.eot?#iefix')) format('embedded-opentype'),
+		url(font_path('Whitney-LightItalic.woff')) format('woff'),
+		url(font_path('Whitney-LightItalic.ttf')) format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Whitney';
+	src: url(font_path('Whitney-BookItalic.eot'));
+	src: url(font_path('Whitney-BookItalic.eot?#iefix')) format('embedded-opentype'),
+		url(font_path('Whitney-BookItalic.woff')) format('woff'),
+		url(font_path('Whitney-BookItalic.ttf')) format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Whitney';
+	src: url(font_path('Whitney-Book.eot'));
+	src: url(font_path('Whitney-Book.eot?#iefix')) format('embedded-opentype'),
+		url(font_path('Whitney-Book.woff')) format('woff'),
+		url(font_path('Whitney-Book.ttf')) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Whitney';
+	src: url(font_path('Whitney-MediumItalic.eot'));
+	src: url(font_path('Whitney-MediumItalic.eot?#iefix')) format('embedded-opentype'),
+		url(font_path('Whitney-MediumItalic.woff')) format('woff'),
+		url(font_path('Whitney-MediumItalic.ttf')) format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Whitney';
+	src: url(font_path('Whitney-Medium.eot'));
+	src: url(font_path('Whitney-Medium.eot?#iefix')) format('embedded-opentype'),
+		url(font_path('Whitney-Medium.woff')) format('woff'),
+		url(font_path('Whitney-Medium.ttf')) format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'conflux';
+    src:    url(font_path('conflux.eot'));
+    src:    url(font_path('conflux.eot?1sqnvm#iefix')) format('embedded-opentype'),
+        url(font_path('conflux.ttf?1sqnvm')) format('truetype'),
+        url(font_path('conflux.woff?1sqnvm')) format('woff'),
+        url(font_path('conflux.svg?1sqnvm#conflux')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// $font-icon: 'conflux';
+// @font-face {
+//     font-family: $font-icon;
+//     src: url(font_path($font-icon+".eot")); /* IE9 Compat Modes */
+//     src: url(font_path($font-icon+".eot?#iefix")) format('embedded-opentype'), /* IE6-IE8 */
+//          url(font_path($font-icon+".woff")) format('woff'), /* Modern Browsers */
+//          url(font_path($font-icon+".ttf"))  format('truetype'), /* Safari, Android, iOS */
+//          url(font_path($font-icon+".svg#" + $font_icon)) format('svg'); /* Legacy iOS */
+//     }
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'conflux' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.conflux-check:before {
+    content: "\e900";
+}
+.conflux-wave:before {
+    content: "\e901";
+}
+.conflux-alarm:before {
+    content: "\e902";
+}
+.conflux-bubble-chat:before {
+    content: "\e903";
+}
+.conflux-megaphone-1:before {
+    content: "\e904";
+}
+.conflux-color-bucket:before {
+    content: "\e905";
+}
+.conflux-window-application-search:before {
+    content: "\e906";
+}

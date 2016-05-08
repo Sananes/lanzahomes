@@ -1,0 +1,12 @@
+/**
+ * Site header
+ */
+.container {
+  @include outer-container;
+  padding-left:20px;
+  padding-right:20px;
+  @include media($mobile) {
+    padding-left: 30px;
+    padding-right:30px;
+  }
+}
