@@ -21,7 +21,7 @@ description: Villa Maxim, located on the stunning island of Lanzarote.
 keywords: villa rental, lanzarote rental, holiday rental lanzarote, villa rental lanzarote, rental villas, lanzarote holiday villa
 
 # Name of project on Github
-baseurl: 'http://lanzahomes.com/2016/'
+baseurl: '/'
 
 # Build settings
 markdown: kramdown

@@ -1,5 +1,5 @@
 _site
 build
 node_modules
-.asset-cache
+source/.asset-cache
 Gemfile.lock
