@@ -65,6 +65,67 @@ layout: default
           %article.masonry-box.masonry-box--guestbook
             %blockquote “The villa is extremely comfortable and homely. The photos do not do it justice. It has a lovely pool and separate terrace. Nice and quiet with local restaurants.”
             %button.muted Read more comments
+    .split-50
+      .masonry-wrapper
+        .masonry-box.masonry-box--villa
+          %h2.title-bold.title Visit the local area around you
+          %button.muted Explore
+      .masonry-wrapper
+        .masonry-wrapper-second
+          %article.masonry-box.masonry-box--arrival
+            %h2 Your Arrival
+          %article.masonry-box.masonry-box--calendar
+            .inner
+              %h2.title-bold The Booking Calendar
+              %button.muted
+                Check availability
+                %i.icon-arrow-right
+          %article.masonry-box.masonry-box--guestbook
+            %blockquote “The villa is extremely comfortable and homely. The photos do not do it justice. It has a lovely pool and separate terrace. Nice and quiet with local restaurants.”
+            %button.muted Read more comments
+
+%section.intro.container
+  .grid{"data-columns" => ""}
+    .brick.big
+      .block.block--villa
+        .content.box-content
+          %h2.title-bold Take a tour of  our wonderful villa
+          %button.muted Take Tour
+    .brick.small
+      .brick__grid--small
+        .block.block--arrival
+          .content
+            Test
+        .block.block--arrival
+          .content
+            Test
+    .brick.small
+      .block.block--activity
+        .content.box-content
+          %h2.title-bold Sports &amp; Activity
+          %button.muted Explore
+    .brick.small
+      .brick__grid--small
+        .block.block--arrival
+          .content
+            -# %h2.title-bold Arrival Package
+        .block.block--calendar
+          .content
+            %h2.title-bold The Booking Calendar
+            %button.muted
+              Check Availability
+              %i.icon-arrow-right
+    .brick.big
+      .block.block--local
+        .content.box-content
+          %h2.title-bold Visit the local area around you
+          %button.muted Explore
+    .brick.small
+      .block.block--guestbook
+        .content
+          %blockquote “The villa is extremely comfortable and homely. The photos do not do it justice. It has a lovely pool and separate terrace. Nice and quiet with local restaurants.”
+          %button.muted Read more comments
+
 
 %section.bottom-cta
   .container

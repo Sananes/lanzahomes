@@ -129,8 +129,12 @@ body {
     }
   }
 }
-
+.intro {
+  margin-bottom:-100px;
+  margin-top:-100px;
+}
 .masonry {
+  display:none;
   margin-bottom:-100px;
   margin-top:-100px;
   .container {
@@ -146,6 +150,7 @@ body {
     @include justify-content(center);
     @include align-items(center);
     @include flex(1);
+    @include align-self(auto);
     text-align:center;
     .masonry-box {
       width: 50%;
@@ -159,7 +164,7 @@ body {
   .split-50 {
     @include display(flex);
     @include flex-wrap(wrap);
-    @include align-content(stretch);
+    @include align-content(auto);
     @include justify-content(flex-start);
     @include align-items(stretch);
     @include flex-direction(row);
@@ -167,7 +172,6 @@ body {
   .masonry-wrapper {
     @include display(flex);
     @include flex(1);
-    @include align-self(auto);
   }
   .masonry-wrapper-second {
     @include display(flex);
@@ -179,7 +183,6 @@ body {
     .masonry-box {
       order: 0;
       flex: 0 1 50%;
-      align-self: stretch;
 
       &:nth-child(3) {
         flex: 0 1 100%;
@@ -190,6 +193,12 @@ body {
     .title-bold {
       font-weight:bold;
       margin-bottom:0;
+    }
+    &--villa {
+      background: url(image_path('villa-maxim-home.jpg')) no-repeat;
+      @include hidpi {
+        background-image: url(image_path('villa-maxim-home@2x.jpg'));
+      }
     }
     &--arrival {
       background: url(image_path('arrival.jpg')) no-repeat;

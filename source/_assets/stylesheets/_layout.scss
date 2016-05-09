@@ -108,3 +108,144 @@
     }
   }
 }
+$media:       screen;
+$feature:     min-width;
+$screen-xs:   480px;
+$column-gap:  0px;
+
+@mixin respond-to($breakpoint) {
+  @media only #{$media} and ($feature: #{$breakpoint}) { @content }
+}
+
+* {
+  @include box-sizing(border-box);
+}
+
+.grid[data-columns] {
+  @include column-count(2);
+  @include column-gap($column-gap);
+
+  margin: 0 auto;
+  padding: $column-gap $column-gap 0;
+  text-align: center;
+
+  // Problems be here:
+  // display: flex;
+  // flex-wrap: wrap;
+
+  @include respond-to($screen-xs) {
+    // @include column-count(1);
+  }
+
+  > .brick {
+    width: 100%;
+
+    &:nth-child(odd) {
+      order: 2;
+
+      @include respond-to($screen-xs) {
+        order: 0;
+      }
+    }
+  }
+}
+
+.brick {
+  margin: 0 auto $column-gap;
+  @include display(flex);
+  padding: $column-gap;
+  background: #e35252;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  overflow:hidden;
+
+  .title-bold {
+    color:$dark-gray;
+    font-weight:bold;
+    margin-bottom:0;
+  }
+
+  .block {
+    @include flex(1);
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    background-size:cover;
+    position:relative;
+
+    &--villa {
+      background-image: url(image_path('villa-maxim-home.jpg'));
+    }
+    &--local {
+      background-image: url(image_path('lagomar.jpg'));
+    }
+    &--arrival {
+      background-image: url(image_path('arrival.jpg'));
+
+    }
+    &--activity {
+      background-image: url(image_path('activity.jpg'));
+
+    }
+    &--guestbook {
+      background: #f6f6f6;
+      blockquote {
+        color: $dark-gray;
+      }
+    }
+    &--calendar {
+      background: #027C8C;
+      text-align:left;
+      .title, button { color: #fff; }
+      button {
+        padding-left:0;
+      }
+      .content {
+        padding:40px;
+      }
+    }
+  }
+  .brick__grid--small {
+    @include display(flex);
+    @include flex(1);
+    @include align-items(stretch);
+    @include justify-content(center);
+
+    .content {
+      @include align-items(center);
+      @include display(flex);
+      @include flex-direction(column);
+    }
+  }
+  button, .btn {
+    font-size: 13px;
+    // &:before {
+    //   position:absolute;
+    //   content:"";
+    //   top:0;
+    //   left:0;
+    //   right:0;
+    //   bottom:0;
+    // }
+  }
+  &.small {
+    height: 295px;
+  }
+  .box-content {
+    background:rgba(255,255,255,.9);
+    padding:40px;
+    max-width:60%;
+  }
+  &.big,  {
+    height: 590px;
+
+
+
+  }
+
+  .grid--alt & {
+    background: #80cd7e;
+  }
+}
