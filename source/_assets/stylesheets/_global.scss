@@ -2,7 +2,42 @@ body {
   background-color: #fff;
 }
 
+.main-slide {
+  height:100vh;
+  overflow:hidden;
+  &:before {
+    content:"";
+    overflow:hidden;
+    background: url(image_path('hero.jpg')) no-repeat top center;
+    background-size:cover;
 
+    @include transition(transform 1s linear);
+    position:absolute;
+    right:0;
+    left:0;
+    height:100vh;
+    z-index:-1;
+    @include hidpi {
+      background: url(image_path('hero@2x.jpg'));
+    }
+  }
+
+  .slider .container {
+      margin-top: -100px;
+  }
+  &--home {
+
+
+    .slider {
+
+    }
+  }
+  &--villa {
+    background-image: url(image_path('villa-hero.jpg'));
+    background-size:cover;
+  }
+
+}
 .header {
   height:100px;
   @include display(flex);
@@ -54,10 +89,10 @@ body {
 }
 
 .slider {
-  padding: 250px;
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
+  height:100%;
   .container {
     text-align:center;
   }
@@ -199,15 +234,7 @@ body {
   }
 
 }
-.main-slide {
-  background: url(image_path('hero.jpg'));
-  background-size:cover;
 
-  @include hidpi {
-    background: url(image_path('hero@2x.jpg'));
-  }
-
-}
 
 .bottom-cta {
   background: $blue;

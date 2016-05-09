@@ -17,7 +17,7 @@
   @include display(flex);
 
   .inner {
-    width:50%;
+    width:60%;
   }
   &.center {
     @include align-items(center);
@@ -63,7 +63,13 @@
   article {
     margin-bottom: 100px;
     &:first-child {
-      margin-top: 100px;
+      margin-top: -140px;
+      .inner {
+        background: #fff;
+        padding:80px;
+        width:70%;
+
+      }
     }
 
     p {
