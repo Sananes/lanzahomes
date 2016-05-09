@@ -37,6 +37,11 @@ body {
     height: 50vh;
     position:relative;
 
+    .slider .container {
+      margin-top:0;
+      height:50%;
+      .title { margin:0; }
+    }
     &:before {
       background-image: url(image_path('villa-hero.jpg'));
       background-size:cover;
@@ -182,6 +187,10 @@ body {
     }
   }
   .masonry-box {
+    .title-bold {
+      font-weight:bold;
+      margin-bottom:0;
+    }
     &--arrival {
       background: url(image_path('arrival.jpg')) no-repeat;
       background-size:cover;
@@ -198,7 +207,8 @@ body {
         background: $blue;
         color: #fff;
         margin:0;
-        font-family: $base-font-family;
+        font-weight:bold;
+        font-family: $secondary-font-family;
         font-size: 12px;
         text-transform: uppercase;
       }

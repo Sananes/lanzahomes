@@ -40,10 +40,14 @@
   @include display(flex);
 
   .summary {
-    width:60%;
+    width:50%;
   }
   &.center {
     @include align-items(center);
+
+    h1, h2, h3, h4 {
+      text-align:center;
+    }
   }
 }
 
