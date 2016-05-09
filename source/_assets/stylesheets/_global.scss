@@ -8,9 +8,9 @@ body {
   &:before {
     content:"";
     overflow:hidden;
-    background: url(image_path('hero.jpg')) no-repeat top center;
+    background-image: url(image_path('hero.jpg'));
     background-size:cover;
-
+    background-repeat: no-repeat;
     @include transition(transform 1s linear);
     position:absolute;
     right:0;
@@ -18,12 +18,13 @@ body {
     height:100vh;
     z-index:-1;
     @include hidpi {
-      background: url(image_path('hero@2x.jpg'));
+      background-image: url(image_path('hero@2x.jpg'));
+      background-size:cover;
     }
   }
 
   .slider .container {
-      margin-top: -100px;
+      margin-top: -200px;
   }
   &--home {
 
@@ -68,7 +69,7 @@ body {
     li {
       height:100%;
       text-transform:uppercase;
-      letter-spacing:1px;
+      letter-spacing:2px;
       font-family: $secondary-font-family;
       font-size: 13px;
 
@@ -278,6 +279,9 @@ footer {
   }
   .copyright {
     background: #fff;
+    font-family: $secondary-font-family;
+    color: $blue-gray;
+
     .container {
       padding:20px;
       @include flex-direction(row);
