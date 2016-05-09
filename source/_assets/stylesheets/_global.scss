@@ -34,8 +34,13 @@ body {
     }
   }
   &--villa {
-    background-image: url(image_path('villa-hero.jpg'));
-    background-size:cover;
+    height: 50vh;
+    position:relative;
+
+    &:before {
+      background-image: url(image_path('villa-hero.jpg'));
+      background-size:cover;
+    }
   }
 
 }
@@ -44,8 +49,8 @@ body {
   @include display(flex);
   background:#fff;
   @include align-items(center);
-  padding-left:30px;
-  padding-right:30px;
+  padding-left:40px;
+  padding-right:40px;
 
   .logo {
     text-indent:-999em;

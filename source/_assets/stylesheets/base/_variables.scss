@@ -11,7 +11,7 @@ $mobile: new-breakpoint(min-width $small-screen 2);
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
-
+$secondary-spacing: 2px;
 // Other Sizes
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
@@ -24,7 +24,7 @@ $blue: #02218C;
 $dark-blue: #1E395B;
 $link-secondary: #666;
 $dark-gray: #333;
-$medium-gray: #4A4A4A;
+$medium-gray: #ccc;
 $blue-gray: #333333;
 $light-gray: #eee;
 $footer-gray: #9B9B9B;

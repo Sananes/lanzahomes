@@ -91,3 +91,16 @@ blockquote {
 .title-bold {
   font-weight:500;
 }
+.t-grey-light {
+  color: $medium-gray;
+}
+.t-uppercase {
+  text-transform:uppercase;
+  letter-spacing:$secondary-spacing;
+}
+.t-subhead {
+  @extend .t-grey-light;
+  @extend .t-uppercase;
+  font-size: 13px;
+  font-family: $secondary-font-family;
+}
