@@ -31,7 +31,7 @@
     margin-right:30px;
   }
   .gallery {
-    @include flex(0 1 70%);
+    @include flex(0 1 65%);
   }
 }
 .col-5 {
@@ -58,7 +58,22 @@
     font-size: 28px;
     color: $dark-gray;
   }
-
+  ul {
+    li + li {
+      margin-top: 1em;
+    }
+    li {
+      position:relative;
+      padding-left:1.5em;
+      &:before {
+        position:absolute;
+        content: "★";
+        font-size: 100%;
+        left:0;
+        color: $blue;
+      }
+    }
+  }
   .gallery {
     display:block;
     &__collection {
@@ -71,8 +86,12 @@
       &--three-up {
         .gallery__image {
           @include flex(0 1 24%);
+
           &:first-child {
             @include flex(0 1 100%);
+            @include display(flex);
+            @include align-items(center);
+            @include justify-content(center);
           }
         }
       }
@@ -87,6 +106,7 @@
 
 
   }
+
   article {
     margin-bottom: 100px;
     // &:first-child {
@@ -106,6 +126,7 @@
         // margin-bottom: 80px;
       }
     }
+
   }
 }
 $media:       screen;
@@ -125,13 +146,8 @@ $column-gap:  0px;
   @include column-count(2);
   @include column-gap($column-gap);
 
-  margin: 0 auto;
   padding: $column-gap $column-gap 0;
   text-align: center;
-
-  // Problems be here:
-  // display: flex;
-  // flex-wrap: wrap;
 
   @include respond-to($screen-xs) {
     // @include column-count(1);
@@ -151,10 +167,10 @@ $column-gap:  0px;
 }
 
 .brick {
-  margin: 0 auto $column-gap;
+  margin: 0 auto;
   @include display(flex);
   padding: $column-gap;
-  background: #e35252;
+  background: #fff;
   color: #fff;
   text-align: center;
   font-size: 30px;
@@ -173,32 +189,44 @@ $column-gap:  0px;
     @include align-items(center);
     @include justify-content(center);
     background-size:cover;
-    position:relative;
 
     &--villa {
       background-image: url(image_path('villa-maxim-home.jpg'));
+      @include hidpi {
+        background-image: url(image_path('villa-maxim-home@2x.jpg'));
+      }
     }
     &--local {
       background-image: url(image_path('lagomar.jpg'));
+      @include hidpi {
+        background-image: url(image_path('lagomar@2x.jpg'));
+      }
     }
     &--arrival {
       background-image: url(image_path('arrival.jpg'));
-
+      @include hidpi {
+        background-image: url(image_path('arrival@2x.jpg'));
+      }
     }
     &--activity {
       background-image: url(image_path('activity.jpg'));
+      @include hidpi {
+        background-image: url(image_path('activity@2x.jpg'));
+      }
 
     }
     &--guestbook {
       background: #f6f6f6;
+      text-align:center;
       blockquote {
+        padding:0 40px;
         color: $dark-gray;
       }
     }
     &--calendar {
       background: #027C8C;
       text-align:left;
-      .title, button { color: #fff; }
+      .title-bold, button { color: #fff; }
       button {
         padding-left:0;
       }
@@ -220,15 +248,9 @@ $column-gap:  0px;
     }
   }
   button, .btn {
-    font-size: 13px;
-    // &:before {
-    //   position:absolute;
-    //   content:"";
-    //   top:0;
-    //   left:0;
-    //   right:0;
-    //   bottom:0;
-    // }
+    @extend %text-uppercase;
+    &:before {
+    }
   }
   &.small {
     height: 295px;
@@ -240,9 +262,6 @@ $column-gap:  0px;
   }
   &.big,  {
     height: 590px;
-
-
-
   }
 
   .grid--alt & {

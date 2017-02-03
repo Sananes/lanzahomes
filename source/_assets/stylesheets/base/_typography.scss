@@ -75,7 +75,9 @@ hr {
   border-top: none;
   margin: $base-spacing 0;
 }
-
+ul, li {
+  font-size: 18px;
+}
 img,
 picture {
   margin: 0;
@@ -102,5 +104,10 @@ blockquote {
   @extend .t-grey-light;
   @extend .t-uppercase;
   font-size: 13px;
+  font-family: $secondary-font-family;
+}
+%text-uppercase {
+  @extend .t-uppercase;
+  font-size:13px;
   font-family: $secondary-font-family;
 }

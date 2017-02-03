@@ -3,22 +3,22 @@ body {
 }
 
 .main-slide {
-  height:100vh;
+  height:90vh;
   overflow:hidden;
   &:before {
     content:"";
     overflow:hidden;
-    background-image: url(image_path('hero.jpg'));
+    background-image: url(image_path('hero-beach.jpg'));
     background-size:cover;
     background-repeat: no-repeat;
     @include transition(transform 1s linear);
     position:absolute;
     right:0;
     left:0;
-    height:100vh;
+    height:90vh;
     z-index:-1;
     @include hidpi {
-      background-image: url(image_path('hero@2x.jpg'));
+      background-image: url(image_path('hero-beach@2x.jpg'));
       background-size:cover;
     }
   }
@@ -43,7 +43,7 @@ body {
       .title { margin:0; }
     }
     &:before {
-      background-image: url(image_path('villa-hero.jpg'));
+      background-image: url('http://www.lanzahomes.com/wp-content/uploads/2015/04/pool-main-1024x673-1024x673.jpg');
       background-size:cover;
     }
   }
@@ -93,6 +93,10 @@ body {
 
         &:hover {
           background: $light-gray;
+        }
+        &:focus {
+          background:$blue;
+          color:#fff;
         }
       }
     }

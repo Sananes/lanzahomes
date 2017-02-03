@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'unslider' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.1
+4 verbose install initial load of /Users/Sananes/Documents/Projects/LanzaHomes/package.json
+5 warn package.json Conflux@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/Sananes/Documents/Projects/LanzaHomes/node_modules/browser-sync/package.json
+7 verbose installManyTop reading scoped package data from /Users/Sananes/Documents/Projects/LanzaHomes/node_modules/gulp/package.json
+8 verbose installManyTop reading scoped package data from /Users/Sananes/Documents/Projects/LanzaHomes/node_modules/gulp-autoprefixer/package.json
+9 verbose installManyTop reading scoped package data from /Users/Sananes/Documents/Projects/LanzaHomes/node_modules/gulp-sass/package.json
+10 verbose installManyTop reading scoped package data from /Users/Sananes/Documents/Projects/LanzaHomes/node_modules/gulp-shell/package.json
+11 verbose installManyTop reading scoped package data from /Users/Sananes/Documents/Projects/LanzaHomes/node_modules/lodash/package.json
+12 verbose readDependencies loading dependencies from /Users/Sananes/Documents/Projects/LanzaHomes/package.json
+13 silly cache add args [ 'unslider', null ]
+14 verbose cache add spec unslider
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'unslider',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'unslider',
+15 silly cache add   rawSpec: '',
+15 silly cache add   spec: 'latest',
+15 silly cache add   type: 'tag' }
+16 silly addNamed unslider@latest
+17 verbose addNamed "latest" is being treated as a dist-tag for unslider
+18 info addNameTag [ 'unslider', 'latest' ]
+19 silly mapToRegistry name unslider
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/unslider
+23 verbose addNameTag registry:https://registry.npmjs.org/unslider not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/unslider
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 10:37:21 AM
+27 verbose request id 86874a56c9aa3f55
+28 http request GET https://registry.npmjs.org/unslider
+29 http 404 https://registry.npmjs.org/unslider
+30 verbose headers { 'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '2',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   date: 'Wed, 11 May 2016 09:37:22 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   connection: 'keep-alive',
+30 verbose headers   'x-served-by': 'cache-ams4121-AMS',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1462959441.983617,VS0,VE184',
+30 verbose headers   vary: 'Accept-Encoding' }
+31 silly get cb [ 404,
+31 silly get   { 'content-type': 'application/json',
+31 silly get     'cache-control': 'max-age=0',
+31 silly get     'content-length': '2',
+31 silly get     'accept-ranges': 'bytes',
+31 silly get     date: 'Wed, 11 May 2016 09:37:22 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     age: '0',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-ams4121-AMS',
+31 silly get     'x-cache': 'MISS',
+31 silly get     'x-cache-hits': '0',
+31 silly get     'x-timer': 'S1462959441.983617,VS0,VE184',
+31 silly get     vary: 'Accept-Encoding' } ]
+32 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/unslider
+32 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+32 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+32 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+32 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+32 verbose stack     at emitTwo (events.js:87:13)
+32 verbose stack     at Request.emit (events.js:172:7)
+32 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+32 verbose stack     at emitOne (events.js:82:20)
+32 verbose stack     at Request.emit (events.js:169:7)
+32 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+33 verbose statusCode 404
+34 verbose pkgid unslider
+35 verbose cwd /Users/Sananes/Documents/Projects/LanzaHomes
+36 error Darwin 15.2.0
+37 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "unslider"
+38 error node v4.4.1
+39 error npm  v2.14.20
+40 error code E404
+41 error 404 Registry returned 404 for GET on https://registry.npmjs.org/unslider
+41 error 404
+41 error 404 'unslider' is not in the npm registry.
+41 error 404 You should bug the author to publish it (or use the name yourself!)
+41 error 404 It was specified as a dependency of 'Conflux'
+41 error 404
+41 error 404 Note that you can also install from a
+41 error 404 tarball, folder, http url, or git url.
+42 verbose exit [ 1, true ]
